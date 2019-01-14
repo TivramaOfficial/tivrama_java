@@ -11,4 +11,6 @@ import com.tma.db.model.User;
 public interface UserRepository extends JpaRepository<User, Integer>{
 
 	public List<User> findByUserId(Integer id);
+	
+	User findByName(String name);
 }

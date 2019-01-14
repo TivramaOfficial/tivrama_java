@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Implementation-Title: data-access
-Implementation-Version: 1.5.3.RELEASE
+Implementation-Version: 1.5.10.RELEASE
 Built-By: roofandfloor
 Implementation-Vendor-Id: com.api
 Build-Jdk: 1.8.0_181

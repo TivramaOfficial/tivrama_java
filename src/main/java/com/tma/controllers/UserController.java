@@ -25,7 +25,7 @@ public class UserController {
 
 	@Autowired
 	private UserService userService;
-
+	
 	@GET
 	@RequestMapping(value = "/locality/getUser/{id}")
 	public ApiResponse<List<User>> getUserById(@PathVariable Integer id) {

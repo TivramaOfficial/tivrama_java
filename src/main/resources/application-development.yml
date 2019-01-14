@@ -21,6 +21,8 @@ database:
   properties: zeroDateTimeBehavior=convertToNull&useTimezone=true&useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false&failOverReadOnly=false&autoReconnect=true&maxReconnects=${database.autoconnect.maxReconnects}&initialTimeout=${database.autoconnect.initialTimeout}&connectTimeout=${database.timeout.connectTimeout}&socketTimeout=${database.timeout.socketTimeout}&queriesBeforeRetryMaster=${database.failover.queriesBeforeRetryMaster}&secondsBeforeRetryMaster=${database.failover.secondsBeforeRetryMaster}
      
 spring:
+  social.facebook.appId: 362086211021531
+  social.facebook.appSecret: 553e4af3c9f910a02073f4495db4cc32
   datasource:
     driverClassName: com.mysql.jdbc.Driver
     url: jdbc:mysql://${database.host},${database.failover.host}/${database.schema}?${database.properties}

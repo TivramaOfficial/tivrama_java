@@ -2,7 +2,7 @@ package com.tma.db.model;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
-import java.sql.Date;
+import java.util.Date;
 
 import javax.persistence.Basic;
 import javax.persistence.Column;
@@ -21,6 +21,9 @@ public class User implements Serializable {
 	@Basic(optional = false)
 	@Column(name="user_id")
 	private Integer userId;
+	
+	@Column(name="password")
+	private String password;
 	
 	@Column(name="name")
 	private String name;
@@ -57,6 +60,21 @@ public class User implements Serializable {
 	
 	@Column(name="dateupdated")
 	private Date dateupdated;
+	
+	@Column(name = "registration_date")
+	private Date registrationDate;
+
+	@Column(name = "facebook_id")
+	private String facebookId;
+
+	@Column(name = "gmail_id")
+	private String gmailId;
+	
+	@Column(name = "status")
+	private int status;
+
+	@Column(name = "last_login_time")
+	private Date lastLoginTime;
 	
 	public User() {
 		
@@ -140,5 +158,40 @@ public class User implements Serializable {
 	public void setDateupdated(Date dateupdated) {
 		this.dateupdated = dateupdated;
 	}
-
+	public Date getRegistrationDate() {
+		return registrationDate;
+	}
+	public void setRegistrationDate(Date registrationDate) {
+		this.registrationDate = registrationDate;
+	}
+	public String getGmailId() {
+		return gmailId;
+	}
+	public void setGmailId(String gmailId) {
+		this.gmailId = gmailId;
+	}
+	public int getStatus() {
+		return status;
+	}
+	public void setStatus(int status) {
+		this.status = status;
+	}
+	public Date getLastLoginTime() {
+		return lastLoginTime;
+	}
+	public void setLastLoginTime(Date date) {
+		this.lastLoginTime = date;
+	}
+	public String getFacebookId() {
+		return facebookId;
+	}
+	public void setFacebookId(String facebookId) {
+		this.facebookId = facebookId;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
 }
